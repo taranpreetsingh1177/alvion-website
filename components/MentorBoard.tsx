@@ -11,7 +11,7 @@ const founders = [
         institution: "SRCC",
         role: "Chief Executive Officer",
         image: "/Photos/krish.png",
-        linkedin: "https://linkedin.com/in/krish-mittal",
+        linkedin: "https://www.linkedin.com/in/krish-mittal-61555222a/",
         description: "Visionary leader with a passion for transforming businesses through strategic consulting and innovative solutions.",
         experience: [
             "Strategy Consulting Experience",
@@ -26,7 +26,7 @@ const founders = [
         institution: "IIT-B",
         role: "Chief Growth Officer",
         image: "/Photos/Sushant.png",
-        linkedin: "https://linkedin.com/in/sushant",
+        linkedin: "https://www.linkedin.com/in/sushant-kashyap-5b0490334/",
         description: "Tech-driven growth strategist combining engineering excellence with business acumen to scale companies rapidly.",
         experience: [
             "Growth Strategy & Execution",
@@ -41,7 +41,7 @@ const founders = [
         institution: "SRCC",
         role: "Chief Operating Officer",
         image: "/Photos/harsh.png",
-        linkedin: "https://linkedin.com/in/harsh-chaurasiya",
+        linkedin: "https://www.linkedin.com/in/harsh0917/",
         description: "Operations expert focused on building efficient systems and fostering high-performance teams for sustainable growth.",
         experience: [
             "Operations & Process Optimization",
