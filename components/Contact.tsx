@@ -129,6 +129,7 @@ export function Contact() {
                                         <div>
                                             <h4 className="font-bold text-white text-sm mb-1">Email Us</h4>
                                             <a href="mailto:office@alvion.in" className="text-white/60 hover:text-white transition-colors text-sm font-medium">office@alvion.in</a>
+                                            <a href="mailto:alvion.office@gmail.com" className="text-white/60 hover:text-white transition-colors text-sm font-medium">alvion.office@gmail.com</a>
                                         </div>
                                     </div>
 
