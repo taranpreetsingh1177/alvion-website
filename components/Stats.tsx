@@ -28,7 +28,7 @@ export function Stats() {
             const el = document.getElementById(`stat-num-${i}`);
             if (!el) return;
 
-            gsap.fromTo(
+            gsap.to(
                 { value: 0 },
                 {
                     value: stat.value,
