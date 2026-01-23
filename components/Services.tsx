@@ -6,32 +6,32 @@ import Image from "next/image";
 const services = [
     {
         icon: "/logos/features/market-research.png",
-        title: "Market & Customer Research",
-        description: "In-depth market analysis & customer insights to understand your target audience, identify opportunities, and validate product-market fit."
+        title: "MARKET & CONSUMER RESEARCH",
+        description: "In-depth market analysis and consumer insights to understand your target audience, identify opportunities, and validate product-market fit."
     },
     {
         icon: "/logos/features/strategy.png",
-        title: "GTM & Growth Strategy",
+        title: "GTM & GROWTH STRATEGY",
         description: "Comprehensive go-to-market strategies and growth playbooks to accelerate your market entry and scale revenue sustainably."
     },
     {
         icon: "/logos/features/performance.png",
-        title: "Pricing & Competitive Analysis",
+        title: "PRICING & COMPETITIVE ANALYSIS",
         description: "Data-driven pricing strategies and competitive benchmarking to maximize margins while staying ahead of market dynamics."
     },
     {
         icon: "/logos/features/consulting.png",
-        title: "Ops & Process Improvement",
-        description: "Streamline operations and optimize workflows to boost efficiency, reduce costs, and improve organizational performance."
+        title: "AI ENABLEMENT & AUTOMATION",
+        description: "Strategic AI integration to automate processes, enhance decision-making, and unlock operational efficiency—from CRM automation to intelligent customer support systems."
     },
     {
         icon: "/logos/features/risk.png",
-        title: "AI & Analytics-Led Decision Support",
-        description: "Leverage artificial intelligence and advanced analytics to make smarter, faster decisions backed by actionable insights."
+        title: "MARKET ENTRY & EXPANSION",
+        description: "End-to-end market entry playbooks for companies expanding into new geographies or segments—including partnership validation and localized GTM strategies."
     },
     {
         icon: "/logos/features/team.png",
-        title: "Product/Services Review & Analysis",
+        title: "PRODUCT & SERVICES REVIEW",
         description: "Thorough evaluation of your offerings to identify gaps, improvement areas, and opportunities for innovation and differentiation."
     }
 ];
