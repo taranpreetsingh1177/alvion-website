@@ -23,7 +23,7 @@ export function Problems() {
                         <div>
                             <span className="text-xs font-bold tracking-widest text-[#FFD700] uppercase mb-4 block">The Landscape</span>
                             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 text-white">
-                                Why bold leaders choose <span className="text-[#FFD700]">Alvion.</span>
+                                THE CONSULTING <span className="text-[#FFD700]">GAP WE FILL</span>
                             </h2>
                             <p className="text-white/60 text-lg leading-relaxed max-w-md">
                                 You shouldn't have to choose between the reliability of big firms and the agility of gig workers. We combine the best of both worlds—high value and high flexibility.
