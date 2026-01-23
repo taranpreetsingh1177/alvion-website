@@ -8,27 +8,51 @@ const companies = [
     {
         name: "Infosys",
         logo: "/logos/infosys.svg",
-        pointers: ["Enterprise Digital Transformation", "Legacy System Modernization", "Global Workforce Training"]
+        pointers: [
+            "Generative AI solution framework for complaint management",
+            "Automation and implementation roadmap",
+            "AI business case and cost-benefit analysis",
+            "Operational change management considerations"
+        ]
     },
     {
         name: "Bajaj",
         logo: "/logos/bajaj.png",
-        pointers: ["Consumer Finance App Revamp", "Data Analytics Engine", "Customer Experience Strategy"]
+        pointers: [
+            "Custom employee learning and training modules",
+            "Corporate compliance content",
+            "Interactive assessment and Q&A framework"
+        ]
     },
     {
         name: "Unstop",
         logo: "/logos/unstop.svg",
-        pointers: ["Platform Scalability", "User Engagement Growth", "Gamification Features"]
+        pointers: [
+            "Competitive analysis across 10 platforms",
+            "Blue Ocean strategic canvas",
+            "Differentiated value proposition",
+            "GTM roadmap and positioning framework"
+        ]
     },
     {
         name: "Masters Union",
         logo: "/logos/masters union.png",
-        pointers: ["Curriculum Digitalization", "Student Portal Development", "Brand Strategy Repositioning"]
+        pointers: [
+            "Comprehensive perception audit report",
+            "Competitive positioning analysis",
+            "Aspirant personas and decision journey maps",
+            "Messaging and marketing strategy framework"
+        ]
     },
     {
         name: "Puma",
         logo: "/logos/puma.svg",
-        pointers: ["E-commerce Optimization", "inventory Management System", "Social Media Campaign"]
+        pointers: [
+            "Consumer personas and segmentation framework",
+            "Brand affinity and athleisure adoption insights",
+            "Campaign themes and influencer engagement strategy",
+            "Community-building and retention playbook"
+        ]
     },
     {
         name: "ANI",
@@ -38,37 +62,71 @@ const companies = [
     {
         name: "Alpha Grep",
         logo: "/logos/alpha-grep.png",
-        pointers: ["High-Frequency Trading Infra", "Low Latency Networking", "Algorithmic Strategy Tools"]
+        pointers: [
+            "BFSI sector website benchmarking report",
+            "Website evaluation framework",
+            "Competitive traffic and keyword analysis",
+            "Best-in-class feature roadmap and emulatable innovations"
+        ]
     },
     {
         name: "Cool The Globe",
         logo: "/logos/cool-the-globe.svg",
-        pointers: ["Sustainability App Launch", "Carbon Footprint Tracker", "Community Engagement"]
+        pointers: [
+            "Strategic growth blueprint",
+            "\"Climate Champion\" ambassador program design",
+            "Global event outreach and presence strategy",
+            "UX/UI and gamification overhaul recommendations"
+        ]
     },
     {
         name: "DU Buddy",
         logo: "/logos/du-buddy.png",
-        pointers: ["Student Housing Platform", "University Admission Guide", "Peer-to-Peer Mentoring"]
+        pointers: [
+            "Horizontal and vertical expansion strategy",
+            "Product assessment and user pain-point identification",
+            "Short and long-term implementation roadmap with KPIs",
+            "Two-phased primary consumer research survey"
+        ]
     },
     {
-        name: "HR Solutions",
+        name: "IAN",
         logo: "/logos/hr-solutions.png",
-        pointers: ["Recruitment Automation", "Employee Onboarding Portal", "Payroll Integration"]
+        pointers: [
+            "Vetted intern recruitment and talent sourcing",
+            "Managed end-to-end recruitment process"
+        ]
     },
     {
         name: "Manipal Cigna",
         logo: "/logos/manipalCigna.png",
-        pointers: ["Insurance Claims Processing", "Health App Development", "Customer Support Bot"]
+        pointers: [
+            "Competitive digital benchmarking report",
+            "UX/UI friction point analysis",
+            "Feature gap matrix and opportunity assessment",
+            "Prioritised product roadmap recommendations"
+        ]
     },
     {
         name: "Ship Turtle",
         logo: "/logos/ship-turtle.svg",
-        pointers: ["Logistics Tracking System", "Supply Chain Optimization", "Vendor Management"]
+        pointers: [
+            "Brazil market landscape and competitor mapping",
+            "Validated partner and enterprise lead pipeline",
+            "Agency-led market acquisition playbook",
+            "Localised talent pipeline and recruitment framework"
+        ]
     },
     {
         name: "Sunfuel Electric",
         logo: "/logos/sunfuel-electric.svg",
-        pointers: ["EV Charging Network App", "IoT Station Management", "User Billing System"]
+        pointers: [
+            "eVTOL ecosystem market landscape and regulatory tracker",
+            "Technical options paper on charging/refuelling architectures",
+            "Site scoring tool and pilot city heatmap",
+            "Unit economics model and station-level demand scenarios",
+            "GTM and partnership strategy deck"
+        ]
     },
 ];
 
