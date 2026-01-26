@@ -57,31 +57,28 @@ export function Navbar() {
     return (
         <>
             <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isSolidNav
-                ? "bg-white/90 backdrop-blur-xl border-b border-black/5 shadow-sm"
+                ? "bg-white/90 backdrop-blur-xl border-b border-stone-200/50 shadow-sm"
                 : "bg-transparent border-b border-transparent"
                 }`}>
-                <div className="container max-w-7xl mx-auto px-6 py-2.5 flex items-center justify-between">
+                <div className="container max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center" aria-label="Alvion Home">
                         <Image
                             src="/logos/official alvion logo.png"
                             alt="Alvion Logo"
-                            width={150}
-                            height={50}
-                            className={`transition-all duration-300 h-10 w-auto ${isSolidNav ? "mix-blend-multiply" : "invert mix-blend-screen"}`}
+                            width={140}
+                            height={45}
+                            className="h-10 w-auto object-contain"
                         />
                     </Link>
 
                     {/* Nav Items - Desktop */}
-                    <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+                    <nav className="hidden lg:flex items-center gap-2" aria-label="Main navigation">
                         {navItems.map((item) => (
                             <Link
                                 key={item.title}
                                 href={item.href}
-                                className={`relative px-4 py-2 text-sm font-medium transition-all duration-300 rounded-full ${isSolidNav
-                                    ? "text-slate-600 hover:text-[#0a1b2b] hover:bg-slate-100"
-                                    : "text-white/80 hover:text-[#FFD700] hover:bg-white/10"
-                                    }`}
+                                className="relative px-4 py-2 text-sm font-bold text-stone-600 hover:text-blue-700 transition-colors duration-300"
                             >
                                 {item.title}
                             </Link>
@@ -96,10 +93,7 @@ export function Navbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Follow us on LinkedIn"
-                            className={`cursor-pointer group relative flex items-center gap-2 px-6 py-2.5 text-sm font-bold rounded-full transition-all duration-300 active:scale-95 shadow-lg overflow-hidden hidden sm:flex ${isSolidNav
-                                ? "bg-[#0077B5] text-white hover:bg-white hover:text-[#0077B5] hover:shadow-xl"
-                                : "bg-[#0077B5] text-white hover:bg-white hover:text-[#0077B5] hover:shadow-[0_0_20px_rgba(0,119,181,0.5)]"
-                                }`}
+                            className="cursor-pointer group relative flex items-center gap-2 px-5 py-2.5 text-xs font-bold rounded-full transition-all duration-300 active:scale-95 shadow-lg overflow-hidden hidden sm:flex bg-[#0077B5] text-white hover:bg-[#006097] hover:shadow-xl"
                         >
                             <svg className="relative z-10 w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -113,10 +107,7 @@ export function Navbar() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Join our WhatsApp channel"
-                            className={`cursor-pointer group relative flex items-center gap-2 px-6 py-2.5 text-sm font-bold rounded-full transition-all duration-300 active:scale-95 shadow-lg overflow-hidden ${isSolidNav
-                                ? "bg-[#25D366] text-white hover:bg-white hover:text-[#25D366] hover:shadow-xl"
-                                : "bg-[#25D366] text-white hover:bg-white hover:text-[#25D366] hover:shadow-[0_0_20px_rgba(37,211,102,0.5)]"
-                                }`}
+                            className="cursor-pointer group relative flex items-center gap-2 px-5 py-2.5 text-xs font-bold rounded-full transition-all duration-300 active:scale-95 shadow-lg overflow-hidden bg-[#25D366] text-white hover:bg-[#1fb854] hover:shadow-xl"
                         >
                             {/* WhatsApp Icon */}
                             <svg

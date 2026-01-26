@@ -49,15 +49,15 @@ export function Insights() {
     const container = useRef<HTMLDivElement>(null);
 
     return (
-        <section ref={container} className="py-24 bg-slate-50">
+        <section ref={container} className="py-24 bg-stone-950">
             <div className="container max-w-7xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="text-xs font-bold tracking-widest text-[#FFD700] uppercase mb-4 block">How We Work</span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#0a1b2b] leading-tight mb-6">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6">
                         Our Engagement <span className="italic text-[#FFD700]">Models</span>
                     </h2>
-                    <p className="text-lg text-slate-600 max-w-3xl mx-auto font-medium">
+                    <p className="text-lg text-slate-400 max-w-3xl mx-auto font-medium">
                         Four clear models — projects, AI efficiency, structured retainers, and internal audits — ensuring every engagement is scoped, executable, and outcome-driven.
                     </p>
                 </div>
@@ -75,14 +75,14 @@ export function Insights() {
 
                                     {/* Front Face */}
                                     <div className="absolute inset-0 backface-hidden">
-                                        <div className="w-full h-full bg-white rounded-3xl shadow-lg border border-slate-100 flex flex-col items-center justify-center p-8 text-center">
-                                            <div className="w-20 h-20 mb-6 rounded-2xl bg-[#0a1b2b] flex items-center justify-center shadow-lg">
+                                        <div className="w-full h-full bg-[#1c1917] rounded-3xl shadow-lg border border-white/10 flex flex-col items-center justify-center p-8 text-center">
+                                            <div className="w-20 h-20 mb-6 rounded-2xl bg-[#0a1b2b] flex items-center justify-center shadow-lg border border-white/10">
                                                 <Icon className="w-10 h-10 text-[#FFD700]" />
                                             </div>
-                                            <h3 className="text-xl font-bold text-[#0a1b2b] leading-tight">
+                                            <h3 className="text-xl font-bold text-white leading-tight">
                                                 {model.title}
                                             </h3>
-                                            <div className="mt-6 text-xs font-semibold text-slate-400 uppercase tracking-widest">
+                                            <div className="mt-6 text-xs font-semibold text-slate-500 uppercase tracking-widest">
                                                 Hover to learn more
                                             </div>
                                         </div>

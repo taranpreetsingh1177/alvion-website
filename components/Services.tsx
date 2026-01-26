@@ -40,7 +40,7 @@ export function Services() {
     const container = useRef<HTMLDivElement>(null);
 
     return (
-        <section id="services" ref={container} className="py-24 bg-slate-50">
+        <section id="services" ref={container} className="py-24 bg-[#F5F5F0]">
             <div className="container max-w-6xl mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
@@ -52,46 +52,31 @@ export function Services() {
                     </p>
                 </div>
 
-                {/* Services Grid */}
-                <div className="grid md:grid-cols-3 gap-6">
+                {/* Services Grid - Minimal Border Layout */}
+                <div className="grid md:grid-cols-3 border-t border-l border-slate-900/10">
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group cursor-pointer relative"
+                            className="group cursor-pointer p-10 border-r border-b border-slate-900/10 hover:bg-white/40 transition-colors duration-300 flex flex-col items-start"
                         >
-                            {/* Card Container */}
-                            <div className="relative p-[1px] rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 bg-white group-hover:-translate-y-1">
-
-                                {/* Hover Border Gradient (Gold/Blue) */}
-                                <div
-                                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                                    style={{
-                                        background: 'linear-gradient(135deg, #0a1b2b 0%, #FFD700 100%)'
-                                    }}
+                            {/* Icon - Clean, no box */}
+                            <div className="w-12 h-12 mb-6 opacity-80 group-hover:opacity-100 transition-opacity duration-300">
+                                <Image
+                                    src={service.icon}
+                                    alt={service.title}
+                                    width={48}
+                                    height={48}
+                                    className="w-full h-full object-contain"
                                 />
-
-                                {/* Inner Content */}
-                                <div className="relative h-full bg-white rounded-[15px] p-8 m-[1px] group-hover:bg-slate-50 transition-colors duration-300">
-                                    {/* Icon Box */}
-                                    <div className="w-16 h-16 mb-6 rounded-2xl bg-[#0a1b2b]/5 group-hover:bg-[#FFD700]/10 flex items-center justify-center p-3 transition-colors duration-300 border border-[#0a1b2b]/5 group-hover:border-[#FFD700]/30">
-                                        <Image
-                                            src={service.icon}
-                                            alt={service.title}
-                                            width={36}
-                                            height={36}
-                                            className="w-full h-full object-contain opacity-80 group-hover:opacity-100 transition-opacity"
-                                        />
-                                    </div>
-
-                                    {/* Content */}
-                                    <h3 className="text-xl font-bold text-[#0a1b2b] mb-3 group-hover:text-black transition-colors">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-sm text-slate-500 leading-relaxed font-medium group-hover:text-slate-600">
-                                        {service.description}
-                                    </p>
-                                </div>
                             </div>
+
+                            {/* Content */}
+                            <h3 className="text-lg font-bold text-[#0a1b2b] mb-3 group-hover:text-blue-700 transition-colors">
+                                {service.title}
+                            </h3>
+                            <p className="text-sm text-slate-500 leading-relaxed font-medium group-hover:text-slate-700">
+                                {service.description}
+                            </p>
                         </div>
                     ))}
                 </div>
