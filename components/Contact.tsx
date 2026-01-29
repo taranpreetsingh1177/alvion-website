@@ -20,8 +20,16 @@ export function Contact() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission
-        console.log("Form submitted:", formData);
+        
+        const subject = `Contact Inquiry from ${formData.fullName}`;
+        const body = `Name: ${formData.fullName}
+Email: ${formData.email}
+Company: ${formData.company}
+
+Message:
+${formData.message}`;
+
+        window.location.href = `mailto:office@alvion.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     };
 
     return (

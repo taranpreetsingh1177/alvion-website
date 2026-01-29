@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -53,17 +54,17 @@ export function Hero() {
 
                     <div className="flex flex-wrap items-center justify-center gap-4">
                         {/* Primary Gold Button */}
-                        <button className="cursor-pointer group relative flex items-center gap-3 px-8 py-4 bg-[#FFD700] text-[#0a1b2b] text-sm font-bold rounded-full transition-all duration-300 active:scale-95 overflow-hidden hover:shadow-[0_0_20px_rgba(255,215,0,0.4)]">
+                        <Link href="#contact" className="cursor-pointer group relative flex items-center gap-3 px-8 py-4 bg-[#FFD700] text-[#0a1b2b] text-sm font-bold rounded-full transition-all duration-300 active:scale-95 overflow-hidden hover:shadow-[0_0_20px_rgba(255,215,0,0.4)]">
                             <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
                             <span className="relative z-10 uppercase tracking-wider">Talk to us</span>
                             <ArrowRight className="relative z-10 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
-                        </button>
+                        </Link>
 
                         {/* Secondary Ghost Button */}
-                        <button className="cursor-pointer flex items-center gap-2 px-8 py-4 border border-white/30 bg-transparent text-white text-sm font-semibold rounded-full hover:bg-white/10 hover:border-[#FFD700]/50 hover:text-[#FFD700] transition-all duration-300">
+                        <Link href="#services" className="cursor-pointer flex items-center gap-2 px-8 py-4 border border-white/30 bg-transparent text-white text-sm font-semibold rounded-full hover:bg-white/10 hover:border-[#FFD700]/50 hover:text-[#FFD700] transition-all duration-300">
                             <span className="uppercase tracking-wider">Our Services</span>
                             <ArrowRight className="w-4 h-4" />
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Trust Indicators (New) */}

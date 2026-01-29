@@ -10,9 +10,9 @@ const founders = [
         name: "Krish Mittal",
         institution: "SRCC",
         role: "Chief Executive Officer",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
-        linkedin: "https://linkedin.com/in/krish-mittal",
-        description: "Visionary leader with a passion for transforming businesses through strategic consulting and innovative solutions.",
+        image: "/Photos/krish.png",
+        linkedin: "https://www.linkedin.com/in/krish-mittal-61555222a/",
+        description: "Krish sets Alvion's strategic direction and drives client relationships, with experience delivering consulting projects across different companies.",
         experience: [
             "Strategy Consulting Experience",
             "Business Development Expert",
@@ -23,181 +23,58 @@ const founders = [
     },
     {
         name: "Sushant",
-        institution: "IIT-B",
+        institution: "IIT Bombay",
         role: "Chief Growth Officer",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
-        linkedin: "https://linkedin.com/in/sushant",
-        description: "Tech-driven growth strategist combining engineering excellence with business acumen to scale companies rapidly.",
+        image: "/Photos/Sushant.png",
+        linkedin: "https://www.linkedin.com/in/sushant-kashyap-5b0490334/",
+        description: "Sushant drives Alvion's business development, partnership strategy, and market positioning. He's responsible for identifying new opportunities and expanding Alvion's client base.",
         experience: [
             "Growth Strategy & Execution",
             "Data-Driven Decision Making",
             "Technical Product Development"
         ],
         education: "Indian Institute of Technology, Bombay",
-        achievements: "Scaled startups from 0 to 1M users"
+        achievements: "Expertise in growth strategy and market expansion"
     },
     {
         name: "Harsh Chaurasiya",
         institution: "SRCC",
         role: "Chief Operating Officer",
-        image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop",
-        linkedin: "https://linkedin.com/in/harsh-chaurasiya",
-        description: "Operations expert focused on building efficient systems and fostering high-performance teams for sustainable growth.",
+        image: "/Photos/harsh.png",
+        linkedin: "https://www.linkedin.com/in/harsh0917/",
+        description: "Harsh oversees Alvion's operations, quality control, and team management. He ensures every project is delivered on time, on budget, and to the highest standards of rigour.",
         experience: [
             "Operations & Process Optimization",
             "Team Leadership & Management",
             "Client Relationship Management"
         ],
         education: "Shri Ram College of Commerce",
-        achievements: "Optimized operations for 30+ projects"
+        achievements: "Led 15+ strategic projects for PUMA, Bajaj, Unstop & Master's Union"
     }
 ];
 
 const teamMembers = [
     {
-        name: "Pranav Yadav",
-        role: "Strategy Director",
-        institution: "Ex-McKinsey",
-        desc: "Ex-McKinsey, 12+ years in scaling startups.",
-        image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop",
-        experience: ["Strategic Planning", "Market Analysis"],
-        education: "IIM Ahmedabad",
-        linkedin: "#",
-        achievements: "Scaled 3 startups"
+        name: "Kayana Agarwal",
+        role: "Strategic Consultant",
+        institution: "JMC",
+        desc: "Experienced researcher and strategist with a diverse portfolio across finance, consulting, and social impact.",
+        image: "/Photos/kayana.png",
+        experience: ["Senior Consultant, 180DC JMC", "Research Analyst, AlphaGrep", "Strategy Intern, Shipturtle"],
+        education: "Jesus and Mary College, Delhi University",
+        linkedin: "https://www.linkedin.com/in/kayanaagarwal/",
+        achievements: "Led strategic projects for Takachar & Robin Hood Army"
     },
     {
-        name: "Sanya Gupta",
-        role: "Tech Lead",
-        institution: "Ex-Google",
-        desc: "Former Google Engineer, AI specialist.",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
-        experience: ["AI/ML Development", "Cloud Architecture"],
-        education: "IIT Delhi",
-        linkedin: "#",
-        achievements: "Patented AI algorithm"
-    }
-];
-
-const mentors = [
-    {
-        name: "Dr. Rajesh Kumar",
-        role: "Strategy Mentor",
-        institution: "Ex-BCG Partner",
-        desc: "20+ years in management consulting, specializing in corporate strategy.",
-        image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop",
-        experience: ["Corporate Strategy", "M&A Advisory"],
-        linkedin: "#",
-        achievements: "Advised Fortune 500 companies"
-    },
-    {
-        name: "Anita Sharma",
-        role: "Finance Mentor",
-        institution: "Ex-Goldman Sachs",
-        desc: "Investment banking veteran with expertise in capital markets.",
-        image: "https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?q=80&w=600&auto=format&fit=crop",
-        experience: ["Investment Banking", "Financial Modeling"],
-        linkedin: "#",
-        achievements: "Led $5B+ deals"
-    },
-    {
-        name: "Vikram Patel",
-        role: "Tech Mentor",
-        institution: "Ex-Microsoft",
-        desc: "Engineering leader with 15+ years in product development.",
-        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=600&auto=format&fit=crop",
-        experience: ["Product Engineering", "Cloud Solutions"],
-        linkedin: "#",
-        achievements: "Built products used by millions"
-    },
-    {
-        name: "Priya Menon",
-        role: "Marketing Mentor",
-        institution: "Ex-Unilever",
-        desc: "Brand strategist with global FMCG experience.",
-        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=600&auto=format&fit=crop",
-        experience: ["Brand Strategy", "Consumer Insights"],
-        linkedin: "#",
-        achievements: "Launched 10+ global brands"
-    },
-    {
-        name: "Arjun Nair",
-        role: "Operations Mentor",
-        institution: "Ex-Amazon",
-        desc: "Supply chain expert who scaled operations across APAC.",
-        image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop",
-        experience: ["Supply Chain", "Process Optimization"],
-        linkedin: "#",
-        achievements: "Reduced costs by 40%"
-    },
-    {
-        name: "Neha Kapoor",
-        role: "HR Mentor",
-        institution: "Ex-Deloitte",
-        desc: "People & culture expert with focus on organizational design.",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop",
-        experience: ["Talent Strategy", "Org Design"],
-        linkedin: "#",
-        achievements: "Transformed 50+ organizations"
-    },
-    {
-        name: "Rahul Joshi",
-        role: "Sales Mentor",
-        institution: "Ex-Salesforce",
-        desc: "Enterprise sales leader who built high-performing teams.",
-        image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=600&auto=format&fit=crop",
-        experience: ["Enterprise Sales", "GTM Strategy"],
-        linkedin: "#",
-        achievements: "Grew revenue 10x"
-    },
-    {
-        name: "Kavita Reddy",
-        role: "Data Science Mentor",
-        institution: "Ex-Meta",
-        desc: "AI/ML expert with research publications in top conferences.",
-        image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?q=80&w=600&auto=format&fit=crop",
-        experience: ["Machine Learning", "Data Analytics"],
-        linkedin: "#",
-        achievements: "15+ research papers"
-    },
-    {
-        name: "Amit Saxena",
-        role: "Legal Mentor",
-        institution: "Ex-Cyril Amarchand",
-        desc: "Corporate lawyer specializing in startup regulations.",
-        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop",
-        experience: ["Corporate Law", "Compliance"],
-        linkedin: "#",
-        achievements: "Advised 100+ startups"
-    },
-    {
-        name: "Sneha Iyer",
-        role: "Design Mentor",
-        institution: "Ex-Airbnb",
-        desc: "Product designer focused on user-centric experiences.",
-        image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop",
-        experience: ["UX Design", "Design Systems"],
-        linkedin: "#",
-        achievements: "Red Dot Award winner"
-    },
-    {
-        name: "Karthik Raman",
-        role: "Startup Mentor",
-        institution: "2x Founder",
-        desc: "Serial entrepreneur with successful exits in SaaS space.",
-        image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop",
-        experience: ["Entrepreneurship", "Fundraising"],
-        linkedin: "#",
-        achievements: "Raised $50M+ funding"
-    },
-    {
-        name: "Divya Krishnan",
-        role: "Sustainability Mentor",
-        institution: "Ex-World Bank",
-        desc: "ESG expert helping companies build sustainable practices.",
-        image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=600&auto=format&fit=crop",
-        experience: ["ESG Strategy", "Impact Assessment"],
-        linkedin: "#",
-        achievements: "Advised governments globally"
+        name: "Suhani Jain",
+        role: "Consulting Director",
+        institution: "JMC",
+        desc: "Consulting Director at 180 Degrees Consulting JMC and Project Sugam Head at Enactus JMC.",
+        image: "/Photos/suhani.png",
+        experience: ["Consulting Director, 180DC JMC", "Project Sugam Head, Enactus JMC", "Senior House Captain, DPS Greater Faridabad"],
+        education: "Jesus and Mary College",
+        linkedin: "https://www.linkedin.com/in/suhani-jain-511b98325/",
+        achievements: "Team Lead Project Department & House Captain"
     }
 ];
 
@@ -231,22 +108,11 @@ export default function TeamPage() {
                     </div>
 
                     {/* Extended Team Section */}
-                    <div className="mb-24">
+                    <div>
                         <h2 className="text-2xl font-bold text-[#0a1b2b] mb-12 border-l-4 border-[#FFD700] pl-4">Directors</h2>
                         <div className="grid md:grid-cols-4 gap-6">
                             {teamMembers.map((member, index) => (
                                 <TeamMemberCard key={index} member={member} isFounder={false} />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Mentors Section */}
-                    <div>
-                        <h2 className="text-2xl font-bold text-[#0a1b2b] mb-12 border-l-4 border-[#FFD700] pl-4">Our Mentors</h2>
-                        <p className="text-slate-600 mb-8 -mt-8 ml-5">Industry veterans guiding our teams and ensuring world-class delivery.</p>
-                        <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6">
-                            {mentors.map((mentor, index) => (
-                                <TeamMemberCard key={index} member={mentor} isFounder={false} />
                             ))}
                         </div>
                     </div>
@@ -281,24 +147,66 @@ function TeamMemberCard({ member, isFounder }: { member: any, isFounder: boolean
                 </div>
 
                 {/* Back Side */}
-                <div className="flip-card-back rounded-2xl border-2 border-[#FFD700] bg-white p-6 flex flex-col shadow-xl overflow-y-auto !rotate-y-180">
-                    <div className="mb-4">
-                        <h4 className="text-lg font-bold text-[#0a1b2b]">{member.name}</h4>
-                        <p className="text-xs text-slate-500 uppercase tracking-wide">{member.role}</p>
-                    </div>
+                <div className="flip-card-back rounded-2xl border-2 border-[#FFD700] p-5 flex flex-col shadow-xl bg-[#0a1b2b] relative">
+                    {/* LinkedIn Icon - Top Right */}
+                    {member.linkedin && member.linkedin !== "#" && (
+                        <a
+                            href={member.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-4 right-4 w-9 h-9 bg-[#0077B5] rounded-lg flex items-center justify-center hover:bg-[#005885] transition-colors z-10"
+                        >
+                            <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                    )}
 
-                    <p className="text-sm text-slate-600 mb-4 italic leading-relaxed">
-                        {member.description || member.desc}
-                    </p>
-
-                    <div className="mt-auto space-y-3">
-                        {member.experience && (
+                    {/* Scrollable Content */}
+                    <div className="overflow-y-auto flex-1 pr-1 scrollbar-thin">
+                        {/* Header */}
+                        <div className="flex items-center gap-3 mb-3">
+                            <div className="w-10 h-10 rounded-full bg-white/10 border border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] font-bold text-base flex-shrink-0">
+                                {member.name.charAt(0)}
+                            </div>
                             <div>
-                                <h5 className="text-xs font-bold text-[#0a1b2b] uppercase mb-1">Expertise</h5>
-                                <ul className="text-xs text-slate-600 space-y-1">
+                                <h4 className="font-bold text-white text-base">{member.name}</h4>
+                                <p className="text-xs text-white/50">{member.role}</p>
+                            </div>
+                        </div>
+
+                        {/* Description */}
+                        <p className="text-xs text-white/80 mb-3 leading-relaxed italic border-l-2 border-[#FFD700] pl-3">
+                            {member.description || member.desc}
+                        </p>
+
+                        {/* Education */}
+                        {member.education && (
+                            <div className="mb-2">
+                                <div className="flex items-center gap-2 text-xs font-bold text-[#FFD700] uppercase tracking-wider mb-1">
+                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                                    </svg>
+                                    Education
+                                </div>
+                                <p className="text-xs text-white/80">{member.education}</p>
+                            </div>
+                        )}
+
+                        {/* Experience */}
+                        {member.experience && (
+                            <div className="mb-2">
+                                <div className="flex items-center gap-2 text-xs font-bold text-[#FFD700] uppercase tracking-wider mb-1">
+                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                    Expertise
+                                </div>
+                                <ul className="space-y-0.5">
                                     {member.experience.map((exp: string, i: number) => (
-                                        <li key={i} className="flex items-center gap-2">
-                                            <span className="w-1 h-1 rounded-full bg-[#FFD700]" />
+                                        <li key={i} className="text-xs text-white/80 flex items-start gap-2">
+                                            <span className="w-1 h-1 rounded-full bg-[#FFD700] mt-1.5 flex-shrink-0" />
                                             {exp}
                                         </li>
                                     ))}
@@ -306,9 +214,12 @@ function TeamMemberCard({ member, isFounder }: { member: any, isFounder: boolean
                             </div>
                         )}
 
+                        {/* Achievement */}
                         {member.achievements && (
-                            <div className="pt-2 border-t border-slate-100">
-                                <p className="text-xs font-medium text-[#0a1b2b]">🏆 {member.achievements}</p>
+                            <div className="p-2 bg-white/10 rounded-lg">
+                                <p className="text-xs text-white font-medium">
+                                    🏆 {member.achievements}
+                                </p>
                             </div>
                         )}
                     </div>

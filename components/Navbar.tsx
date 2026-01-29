@@ -11,9 +11,8 @@ const navItems = [
     { title: "Our Services", href: "/#services" },
     { title: "Our Clientele", href: "/clientele" },
     { title: "Why Alvion?", href: "/why-alvion" },
-    { title: "Careers", href: "/careers" },
     { title: "Contact Us", href: "/#contact" },
-    { title: "Team", href: "/team" },
+    // { title: "Team", href: "/team" },
 ];
 
 export function Navbar() {

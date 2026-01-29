@@ -10,32 +10,36 @@ interface FAQItem {
 
 const faqItems: FAQItem[] = [
     {
-        question: "How do I start working with your consulting firm?",
-        answer: "Getting started is easy. Simply click on 'Talk to us' or 'Get started for free' to schedule an initial consultation where we'll discuss your specific goals and how our strategies can help you scale."
+        question: "How do I start working with Alvion?",
+        answer: "It's simple—book a 30-minute discovery call where we'll understand your challenge, goals, and constraints. If there's a fit, we'll send a detailed proposal within 48 hours with scope, timeline, and pricing. Once you approve, we kick off immediately.\n\nNo pitch, no pressure—just an honest conversation about whether we can help."
     },
     {
-        question: "Does your strategy work for small startups as well as large enterprises?",
-        answer: "Absolutely. Our core philosophy is 'Start from small' - we build strong foundations that are designed to scale. We have tailored frameworks for early-stage startups as well as Fortune 500 companies."
+        question: "What's your typical project timeline?",
+        answer: "Most projects are completed in 4-8 weeks, depending on scope. Here are some benchmarks:\n\n- Market research projects: 4-6 weeks\n- GTM strategy: 4-6 weeks\n- Market entry playbooks: 6-8 weeks\n- AI enablement projects: 4-10 weeks\n\nWe're 3x faster than traditional consulting firms without compromising quality."
     },
     {
-        question: "Can you help with team expansion and talent recruitment?",
-        answer: "Yes, our Team & Talent Optimization service focuses on building high-performing teams. This includes everything from defining roles and recruiting to training and organizational development."
-    },
-    {
-        question: "How fast can we expect to see results from the consulting?",
-        answer: "While long-term growth takes time, our data-driven approach often identifies 'quick wins' within the first 30-60 days. We focus on measurable outcomes at every stage of the process."
+        question: "How do you ensure quality and consistency?",
+        answer: "Quality is built into our process, not dependent on individuals:\n\n✓ Structured consulting frameworks and templates for every project type\n✓ Senior mentor oversight—every deliverable is reviewed by domain experts with 10-15 years of experience\n✓ Weekly milestone reviews and quality checkpoints\n✓ No raw work goes to clients—everything is validated and polished\n\nResult: Consistent, high-quality output regardless of team composition."
     },
     {
         question: "Is our business data secure when working with your team?",
-        answer: "We take data security and confidentiality extremely seriously. We sign NDAs with all our clients and use enterprise-grade tools to ensure your business intelligence and strategy remain your competitive advantage."
-    },
-    {
-        question: "Why choose your consulting over other traditional firms?",
-        answer: "We combine deep industry expertise with a modern, agile approach. Unlike traditional firms that provide thick reports, we focus on actionable insights and implementation-driven strategies."
+        answer: "Absolutely. We treat confidentiality as non-negotiable:\n\n✓ NDAs signed for all engagements (standard practice)\n✓ Restricted data access—only assigned team members see your information\n✓ No local storage—centralized, secure document control\n✓ Sensitive work handled by senior members with proven track records\n\nYour data is used solely for project execution and never shared externally."
     },
     {
         question: "What industries do you specialize in?",
-        answer: "We have broad experience across SaaS, fintech, e-commerce, and digital services. Our strategic frameworks are cross-functional and can be adapted to most modern, tech-enabled industries."
+        answer: "We focus on three core sectors where we have proven expertise:\n\n1. Consumer Tech & Brands (PUMA, Unstop)\n2. EdTech & Education (Master's Union, UpGrad)\n3. SaaS & B2B Tech (ShipTurtle, ManipalCigna)\n\nThat said, our methodologies work across industries. If your challenge involves market research, GTM strategy, or market entry, we can likely help—regardless of sector."
+    },
+    {
+        question: "Why not just use AI for research instead of hiring you?",
+        answer: "AI is a powerful tool, but it can't:\n\n✓ Define the right problem or align stakeholders\n✓ Conduct primary research (surveys, FGDs, stakeholder interviews)\n✓ Provide contextual judgment and strategic recommendations\n✓ Drive execution and implementation\n\nWe use AI to accelerate analysis and data processing—but combine it with human strategic thinking, primary research, and execution expertise. AI gives answers; we help you make decisions."
+    },
+    {
+        question: "Can you help with AI implementation for our business?",
+        answer: "Yes. Through our AI Enablement & Automation service, we help companies:\n\n✓ Identify high-impact automation opportunities\n✓ Select and deploy AI tools tailored to your workflows\n✓ Integrate AI with existing systems (CRM, support, operations)\n✓ Train teams and manage change\n\nWe recently helped a Fortune 500 client deploy AI-powered CRM automation, reducing manual workload by 60% and improving response times significantly."
+    },
+    {
+        question: "What makes Alvion different from other consulting firms?",
+        answer: "Three things set us apart:\n\n1. Consulting-grade quality at growth-stage pricing\n\n2. Speed without compromise\n(4-8 weeks vs 6-12 months for traditional consulting)\n\n3. Execution focus, not just slides\n(Primary research, validated partnerships, implementation-ready strategies)"
     }
 ];
 
@@ -73,10 +77,10 @@ export function FAQ() {
                             </button>
 
                             <div
-                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 pb-6 opacity-100" : "max-h-0 opacity-0"
+                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-[800px] pb-6 opacity-100" : "max-h-0 opacity-0"
                                     }`}
                             >
-                                <p className="text-black/60 leading-relaxed max-w-3xl">
+                                <p className="text-black/60 leading-relaxed max-w-3xl whitespace-pre-line">
                                     {item.answer}
                                 </p>
                             </div>

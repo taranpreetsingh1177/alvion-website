@@ -55,8 +55,8 @@ const companies = [
         ]
     },
     {
-        name: "ANI",
-        logo: "/logos/ANI.png",
+        name: "Indian Angel Network (IAN)",
+        logo: "/logos/IAN.png",
         pointers: ["News Content Delivery Network", "Real-time Reporting Tools", "Digital Archive System"]
     },
     {
@@ -90,7 +90,7 @@ const companies = [
         ]
     },
     {
-        name: "IAN",
+        name: "HR India Solutions",
         logo: "/logos/hr-solutions.png",
         pointers: [
             "Vetted intern recruitment and talent sourcing",
@@ -109,7 +109,7 @@ const companies = [
     },
     {
         name: "Ship Turtle",
-        logo: "/logos/ship-turtle.svg",
+        logo: "/logos/ship-turtle.png",
         pointers: [
             "Brazil market landscape and competitor mapping",
             "Validated partner and enterprise lead pipeline",
