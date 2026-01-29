@@ -45,7 +45,7 @@ const engagementModels = [
     }
 ];
 
-export function Insights() {
+export function Models() {
     const container = useRef<HTMLDivElement>(null);
 
     return (

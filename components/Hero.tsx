@@ -2,116 +2,129 @@
 
 import { useRef } from "react";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Briefcase, Clock, GraduationCap, LayoutGrid, Database, FileText, rocket, Rocket } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import Link from "next/link";
 
 export function Hero() {
     const container = useRef<HTMLDivElement>(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 1 } });
-        
-        // Animate text content
-        tl.from(".hero-content > *", { y: 30, opacity: 0, stagger: 0.1, duration: 1 });
-        
-        // Animate collage items
-        tl.from(".collage-item", {
-             y: 50, 
-             opacity: 0, 
-             stagger: 0.15, 
-             duration: 1.2,
-             ease: "power2.out"
-        }, "-=0.5");
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+        tl.from(".hero-title", { y: 30, opacity: 0, duration: 0.8 })
+          .from(".strategy-card", { y: 20, opacity: 0, stagger: 0.1, duration: 0.6 }, "-=0.4")
+          .from(".why-choose-label", { opacity: 0, duration: 0.5 }, "-=0.2")
+          .from(".stat-pill", { y: 20, opacity: 0, stagger: 0.1, duration: 0.6 }, "-=0.2")
+          .fromTo(".cta-main", { scale: 0.9, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.5 }, "-=0.2")
+          .from(".clients-footer", { opacity: 0, y: 10, duration: 0.8 }, "-=0.2");
+
     }, { scope: container });
 
     return (
-        <section ref={container} className="relative min-h-screen bg-[#F5F5F0] flex items-center pt-32 pb-20 overflow-hidden">
-            <div className="container max-w-7xl mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <section ref={container} className="relative min-h-[calc(100vh-80px)] bg-[#F9F6F2] flex flex-col items-center justify-center pt-24 pb-8 px-6 overflow-hidden">
+            
+            {/* Main Headline */}
+            <div className="text-center mb-6 max-w-4xl mx-auto">
+                <h1 className="hero-title text-3xl md:text-5xl lg:text-[3rem] font-medium text-[#0a1b2b] tracking-tight leading-[1.1] font-[family-name:var(--font-bricolage)]">
+                    Helping businesses lead in the industry by
+                </h1>
+            </div>
+
+            {/* Strategy Cards */}
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 mb-8 w-full max-w-5xl">
+                
+                {/* GTM Strategies - Blue */}
+                <div className="strategy-card relative group">
+                    <div className="px-5 py-2 md:px-8 md:py-3 rounded-xl border border-[#4DA8FF] bg-[#E0F0FF] text-[#0099FF] transition-all hover:-translate-y-1 hover:shadow-md cursor-pointer flex items-center gap-3">
+                         <Rocket className="w-5 h-5 md:w-6 md:h-6" />
+                         <span className="text-lg md:text-2xl font-bold tracking-tight font-[family-name:var(--font-bricolage)]">GTM Strategies</span>
+                    </div>
+                    {/* Floating Arrow Badge */}
+                    <div className="absolute -top-3 -right-3 w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#0099FF] text-white flex items-center justify-center shadow-md z-10">
+                         <ArrowUpRight className="w-3 h-3 md:w-4 md:h-4" />
+                    </div>
+                </div>
+
+                 {/* Primary Survey - Red */}
+                <div className="strategy-card relative group">
+                    <div className="px-5 py-2 md:px-8 md:py-3 rounded-xl border border-[#FF6B6B] bg-[#FFE5E5] text-[#FF4D4D] transition-all hover:-translate-y-1 hover:shadow-md cursor-pointer flex items-center gap-3">
+                        <FileText className="w-5 h-5 md:w-6 md:h-6" />
+                        <span className="text-lg md:text-2xl font-bold tracking-tight font-[family-name:var(--font-bricolage)]">Primary Survey</span>
+                    </div>
+                    <div className="absolute -top-3 -right-3 w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#FF4D4D] text-white flex items-center justify-center shadow-md z-10">
+                         <ArrowUpRight className="w-3 h-3 md:w-4 md:h-4" />
+                    </div>
+                </div>
+
+                 {/* Data Analysis - Orange */}
+                <div className="strategy-card relative group">
+                    <div className="px-5 py-2 md:px-8 md:py-3 rounded-xl border border-[#FFB84D] bg-[#FFF4E0] text-[#FF9F1C] transition-all hover:-translate-y-1 hover:shadow-md cursor-pointer flex items-center gap-3">
+                        <Database className="w-5 h-5 md:w-6 md:h-6" />
+                        <span className="text-lg md:text-2xl font-bold tracking-tight font-[family-name:var(--font-bricolage)]">Data Analysis</span>
+                    </div>
+                    <div className="absolute -top-3 -right-3 w-6 h-6 md:w-7 md:h-7 rounded-full bg-[#FF9F1C] text-white flex items-center justify-center shadow-md z-10">
+                         <ArrowUpRight className="w-3 h-3 md:w-4 md:h-4" />
+                    </div>
+                </div>
+
+            </div>
+
+            {/* Stats Selection */}
+            <div className="w-full max-w-5xl mx-auto mb-8 flex flex-col items-center">
+                <p className="why-choose-label text-stone-400 text-xs font-medium mb-4 uppercase tracking-wide">why choose us?</p>
+                
+                <div className="flex flex-wrap justify-center gap-3 md:gap-5">
+                     {/* Clients */}
+                    <div className="stat-pill flex items-center gap-2 min-w-[150px] px-5 py-2.5">
+                        <Briefcase className="w-4 h-4 text-stone-600" />
+                        <span className="text-lg font-bold text-stone-800">15+ <span className="text-stone-400 font-normal text-sm">Clients</span></span>
+                    </div>
                     
-                    {/* Left Column: Text Content */}
-                    <div className="hero-content order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-stone-950 mb-8">
-                            Your <span className="text-blue-700">Vision.</span> <br />
-                            Our <span className="text-blue-700">Strategy.</span>
-                        </h1>
-
-                        <p className="text-lg md:text-xl text-stone-600 leading-relaxed max-w-lg mb-10">
-                            We help organizations enter new markets, automate operations, and scale revenue through deep research and precise execution—faster and more cost-effectively than traditional firms.
-                        </p>
-
-                        <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
-                            {/* Primary Button */}
-                            <button className="cursor-pointer group flex items-center gap-2 px-8 py-4 bg-blue-700 text-white text-sm font-bold rounded-full transition-all duration-300 hover:bg-blue-800 hover:shadow-lg hover:shadow-blue-900/20 active:scale-95">
-                                <span className="uppercase tracking-wide">Let's Talk</span>
-                                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                            </button>
-
-                            {/* Secondary Button */}
-                            <button className="cursor-pointer flex items-center gap-2 px-8 py-4 border border-stone-300 bg-white text-stone-900 text-sm font-bold rounded-full hover:bg-stone-50 hover:border-stone-400 transition-all duration-300">
-                                <span className="uppercase tracking-wide">What We Can Do</span>
-                            </button>
-                        </div>
+                    {/* Mentors */}
+                    <div className="stat-pill flex items-center gap-2 min-w-[150px] px-5 py-2.5">
+                        <GraduationCap className="w-4 h-4 text-stone-600" />
+                        <span className="text-lg font-bold text-stone-800">25+ <span className="text-stone-400 font-normal text-sm">Mentors</span></span>
                     </div>
 
-                    {/* Right Column: Collage */}
-                    <div className="order-1 lg:order-2 relative h-[500px] md:h-[600px] w-full flex items-center justify-center">
-                         <div className="relative w-full h-full max-w-[600px]">
-                            
-                            {/* Top Left Circle - Solid Blue */}
-                            <div className="collage-item absolute top-0 left-[5%] w-24 h-24 md:w-32 md:h-32 rounded-full bg-blue-700 z-10" />
+                    {/* Hours */}
+                    <div className="stat-pill flex items-center gap-2 min-w-[150px] px-5 py-2.5">
+                        <Clock className="w-4 h-4 text-stone-600" />
+                        <span className="text-lg font-bold text-stone-800">1500+ <span className="text-stone-400 font-normal text-sm">Hours</span></span>
+                    </div>
 
-                            {/* Top Right - Wide Pill (Team meeting / strategy) */}
-                            <div className="collage-item absolute top-[5%] right-0 w-[65%] h-32 md:h-40 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl">
-                                <Image 
-                                    src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&q=80&w=1974" 
-                                    alt="Strategy Meeting" 
-                                    width={400} 
-                                    height={200}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Middle Left - Vertical Pill (Consultant working) */}
-                            <div className="collage-item absolute top-[25%] left-0 w-[40%] h-48 md:h-64 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl z-20">
-                                <Image 
-                                    src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1974" 
-                                    alt="Consultant" 
-                                    width={300} 
-                                    height={400}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Middle Right - Square-ish (Data/Analytics) */}
-                            <div className="collage-item absolute top-[40%] right-[10%] w-[45%] h-48 md:h-56 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl z-20">
-                                <Image 
-                                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2015" 
-                                    alt="Analytics" 
-                                    width={300} 
-                                    height={300}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Bottom Center - Wide Pill (Handshake/Deal) */}
-                            <div className="collage-item absolute bottom-0 left-[20%] w-[60%] h-32 md:h-40 rounded-[2rem] overflow-hidden border-4 border-white shadow-xl z-30">
-                                 <Image 
-                                    src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=1974" 
-                                    alt="Collaboration" 
-                                    width={400} 
-                                    height={200}
-                                    className="w-full h-full object-cover"
-                                />
-                            </div>
-
-                            {/* Bottom Right Circle - Solid Stone/Gray */}
-                            <div className="collage-item absolute bottom-[10%] right-[-5%] w-20 h-20 md:w-28 md:h-28 rounded-full bg-[#FFD700] z-10" />
-                         </div>
+                     {/* Sectors */}
+                    <div className="stat-pill flex items-center gap-2 min-w-[150px] px-5 py-2.5">
+                        <LayoutGrid className="w-4 h-4 text-stone-600" />
+                        <span className="text-lg font-bold text-stone-800">8+ <span className="text-stone-400 font-normal text-sm">Sectors</span></span>
                     </div>
                 </div>
             </div>
+
+            {/* CTA Button */}
+            <div className="mb-10 text-center">
+                 <Link href="#contact" className="cta-main inline-flex items-center gap-2 px-8 py-3 bg-[#1F4068] text-white text-base font-medium rounded-lg hover:bg-[#162e4d] transition-all hover:scale-105 shadow-lg relative z-20">
+                    Let's Talk <ArrowRight className="w-4 h-4" />
+                 </Link>
+            </div>
+
+            {/* Clients Footer */}
+            <div className="clients-footer text-center w-full max-w-7xl mx-auto">
+                 <p className="text-stone-400 mb-4 text-xs font-medium uppercase tracking-wide">Not convinced enough? Meet our previous clients:</p>
+                 <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 ">
+                     <Image src="/logos/alpha-grep.png" alt="AlphaGrep" width={120} height={40} className="h-6 md:h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                     <Image src="/logos/bajaj.png" alt="Bajaj" width={120} height={40} className="h-6 md:h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                     {/* "A Group" substitute */}
+                     <div className="h-6 md:h-8 flex items-center text-red-600 font-bold text-lg grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100 italic cursor-default select-none">
+                         <span className="text-2xl">A</span>Group
+                     </div>
+                     <Image src="/logos/masters union.png" alt="Masters Union" width={120} height={40} className="h-6 md:h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                     <Image src="/logos/puma.svg" alt="Puma" width={120} height={40} className="h-6 md:h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                     <Image src="/logos/sunfuel-electric.svg" alt="Sunfuel" width={120} height={40} className="h-6 md:h-8 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100" />
+                 </div>
+            </div>
+            
         </section>
     );
 }

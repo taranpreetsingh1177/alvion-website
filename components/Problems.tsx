@@ -5,10 +5,10 @@ import { TraditionalFirmIcon } from "@/components/icons/TraditionalFirmIcon";
 import { InternshipIcon } from "@/components/icons/InternshipIcon";
 import { FreelancerIcon } from "@/components/icons/FreelancerIcon";
 import { AlvionIcon } from "@/components/icons/AlvionIcon";
-import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Briefcase, GraduationCap, Laptop } from "lucide-react";
 
 if (typeof window !== "undefined") {
     gsap.registerPlugin(ScrollTrigger);
@@ -17,136 +17,115 @@ if (typeof window !== "undefined") {
 export function Problems() {
     const container = useRef<HTMLDivElement>(null);
 
-    useGSAP(() => {
-        // Fade in title and text
-        gsap.from(".fade-in-text", {
-            y: 30,
-            opacity: 0,
-            duration: 1,
-            stagger: 0.2,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: container.current,
-                start: "top 75%",
-            }
-        });
-
-        // Stagger in grid items
-        gsap.from(".grid-item", {
-            y: 40,
-            opacity: 0,
-            duration: 0.8,
-            stagger: 0.15,
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: ".matrix-grid",
-                start: "top 80%",
-            }
-        });
-    }, { scope: container });
+    
 
     return (
-        <section ref={container} className="w-full bg-stone-950 text-white py-24 md:py-32 overflow-hidden relative">
+        <section ref={container} className="w-full bg-[#F4EEE5] text-stone-900 min-h-[calc(100vh-80px)] mt-[80px] flex flex-col items-center justify-center relative overflow-hidden">
+            
+            <div className="container max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-12 gap-12 items-center h-full">
+                
+                {/* Left Side: Content */}
+                <div className="lg:col-span-4 flex flex-col items-start text-left">
+                    <h2 className="fade-in-title text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 text-stone-900">
+                        The Consulting <br />
+                        <span className="text-stone-500">Gap We Fill</span>
+                    </h2>
+                    <p className="fade-in-title text-lg text-stone-600 max-w-md leading-relaxed mb-8">
+                        Traditional firms are too rigid. Freelancers are too risky. We sit perfectly in the quadrant of high value and high flexibility.
+                    </p>
+                </div>
 
-            {/* Background Accents (Subtle) */}
-            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-900/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-10%] left-[-10%] w-[500px] h-[500px] bg-blue-700/5 rounded-full blur-[100px]" />
-            </div>
-
-            <div className="container max-w-7xl mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-
-                    {/* Left Column: Text Content */}
-                    <div className="max-w-xl">
-
-
-                        <h2 className="fade-in-text text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
-                            The Consulting <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">Gap We Fill</span>
-                        </h2>
-
-                        <p className="fade-in-text text-lg text-slate-400 leading-relaxed max-w-lg mb-8">
-                            You shouldn't have to choose between the reliability of big firms and the agility of gig workers.
-                        </p>
-
-                        <div className="fade-in-text space-y-4">
-                            <div className="flex items-center gap-3 text-slate-300">
-                                <div className="w-2 h-2 rounded-full bg-blue-700" />
-                                <span>High Value Strategic Insight</span>
-                            </div>
-                            <div className="flex items-center gap-3 text-slate-300">
-                                <div className="w-2 h-2 rounded-full bg-blue-700" />
-                                <span>Cost-Effective Flexibility</span>
-                            </div>
-                            <div className="flex items-center gap-3 text-slate-300">
-                                <div className="w-2 h-2 rounded-full bg-blue-700" />
-                                <span>Rapid Team Deployment</span>
-                            </div>
-                        </div>
+                {/* Right Side: Matrix */}
+                <div className="lg:col-span-8 relative w-full lg:mr-0 lg:ml-auto">
+                    {/* Y-Axis Labels */}
+                    <div className="absolute -left-6 top-[25%] -translate-y-1/2 -rotate-90 text-[9px] tracking-[0.2em] text-stone-400 font-bold uppercase hidden md:block whitespace-nowrap">
+                        High Value
+                    </div>
+                     <div className="absolute -left-6 top-[75%] -translate-y-1/2 -rotate-90 text-[9px] tracking-[0.2em] text-stone-400 font-bold uppercase hidden md:block whitespace-nowrap">
+                        Low Value
+                    </div>
+                    
+                    {/* X-Axis Labels */}
+                    <div className="absolute bottom-[-2.1rem] left-[25%] -translate-x-1/2 text-[9px] tracking-[0.2em] text-stone-400 font-bold uppercase hidden md:block whitespace-nowrap">
+                        Low Flexibility
+                    </div>
+                    <div className="absolute bottom-[-4rem] left-[75%] -translate-x-1/2 text-[9px] tracking-[0.2em] text-stone-400 font-bold uppercase hidden md:block whitespace-nowrap">
+                        High Flexibility
                     </div>
 
-                    {/* Right Column: The Matrix */}
-                    <div className="matrix-grid relative">
-                        {/* Axis Labels */}
-                        {/* Axis Labels */}
-                        <div className="absolute -left-12 top-[25%] -translate-y-1/2 -rotate-90 text-[10px] tracking-widest text-blue-500 font-bold uppercase hidden sm:block whitespace-nowrap">
-                            High Value
-                        </div>
-                        <div className="absolute -left-12 top-[75%] -translate-y-1/2 -rotate-90 text-[10px] tracking-widest text-slate-600 font-medium uppercase hidden sm:block whitespace-nowrap">
-                            Low Value
-                        </div>
-
-                        <div className="absolute bottom-[-2rem] left-[25%] -translate-x-1/2 text-[10px] tracking-widest text-slate-600 font-medium uppercase hidden sm:block whitespace-nowrap">
-                            Low Flexibility
-                        </div>
-                        <div className="absolute bottom-[-2rem] left-[75%] -translate-x-1/2 text-[10px] tracking-widest text-blue-500 font-bold uppercase hidden sm:block whitespace-nowrap">
-                            High Flexibility
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-4">
-                            {/* Option 1: Traditional Firms */}
-                            <div className="grid-item group cursor-pointer p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-red-500/30 hover:shadow-lg hover:shadow-red-900/10 hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-4 h-full min-h-[180px]">
-                                <TraditionalFirmIcon className="w-14 h-14 transition-transform duration-300 group-hover:scale-105" />
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-200 mb-1">Traditional Firms</h3>
-                                    <p className="text-xs text-slate-500 leading-normal">High cost, rigid structures, slower adaptability.</p>
+                    {/* Matrix Grid */}
+                    <div className="matrix-grid grid grid-cols-2 gap-3 md:gap-4 w-full h-full">
+                        
+                        {/* 1. Traditional Firms (High Value, Low Flexibility) */}
+                        <div className="group matrix-card rounded-xl bg-white p-3 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                            {/* Placeholder Image */}
+                            <div className="w-full aspect-[21/9] bg-stone-200 rounded-lg mb-3 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                                <div className="absolute inset-0 flex items-center justify-center text-stone-400 font-medium text-xs">
+                                    [Office]
                                 </div>
                             </div>
 
-                            {/* Option 2: ALVION (Hero) */}
-                            <div className="grid-item relative cursor-pointer p-6 rounded-2xl bg-gradient-to-br from-[#0a1b2b] to-[#162a3f] border border-blue-700/30 hover:border-blue-500/80 hover:shadow-[0_0_40px_rgba(59,130,246,0.15)] hover:scale-[1.03] transition-all duration-300 flex flex-col items-start gap-4 h-full min-h-[180px]">
-                                <div className="absolute inset-0 bg-blue-700/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                                <div className="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-blue-500">
-                                    <AlvionIcon className="w-14 h-14" />
-                                </div>
-                                <div>
-                                    <h3 className="text-sm font-bold text-white mb-1 tracking-wide">ALVION</h3>
-                                    <p className="text-xs text-slate-300 leading-normal">Premium expertise with the agility your business needs.</p>
+                            <div className="px-1 pb-1">
+                                <h3 className="text-sm md:text-base font-bold text-stone-900 mb-1">Traditional Firms</h3>
+                                <p className="text-xs text-stone-500 leading-relaxed">Rigid structures, high cost, generic strategies.</p>
+                            </div>
+                        </div>
+
+                        {/* 2. ALVION (High Value, High Flexibility) */}
+                        <div className="group matrix-card rounded-xl bg-white p-3 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full relative overflow-hidden ring-1 ring-blue-100">
+                            {/* Placeholder Image */}
+                             <div className="w-full aspect-[21/9] bg-blue-50/50 rounded-lg mb-3 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                                  <div className="absolute inset-0 flex items-center justify-center text-blue-400 font-medium text-xs">
+                                    [Alvion]
                                 </div>
                             </div>
 
-                            {/* Option 3: Internships */}
-                            <div className="grid-item group cursor-pointer p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-yellow-500/30 hover:shadow-lg hover:shadow-yellow-900/10 hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-4 h-full min-h-[180px]">
-                                <InternshipIcon className="w-12 h-12 text-slate-400 group-hover:text-white transition-colors" />
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-200 mb-1">Internships</h3>
-                                    <p className="text-xs text-slate-500 leading-normal">Low cost, requires heavy management, temporary.</p>
-                                </div>
-                            </div>
-
-                            {/* Option 4: Freelancers */}
-                            <div className="grid-item group cursor-pointer p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-900/10 hover:scale-[1.02] transition-all duration-300 flex flex-col items-start gap-4 h-full min-h-[180px]">
-                                <FreelancerIcon className="w-12 h-12 text-slate-400 group-hover:text-white transition-colors" />
-                                <div>
-                                    <h3 className="text-sm font-semibold text-slate-200 mb-1">Freelancers</h3>
-                                    <p className="text-xs text-slate-500 leading-normal">Flexible but inconsistent quality and reliability.</p>
+                            <div className="px-1 pb-1 relative z-10">
+                                <h3 className="text-sm md:text-base font-bold text-stone-900 mb-1 flex items-center gap-2">
+                                    ALVION 
+                                </h3>
+                                <p className="text-xs text-stone-500 leading-relaxed mb-2">Team working seamlessly as mountainstop.</p>
+                                {/* Mini badge for distinction */}
+                                <div className="inline-flex items-center gap-1 text-[8px] font-bold tracking-widest uppercase text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">
+                                    Best Choice
                                 </div>
                             </div>
                         </div>
+
+                         {/* 3. Internships (Low Value, Low Flexibility) */}
+                         <div className="group matrix-card rounded-xl bg-white p-3 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                            {/* Placeholder Image */}
+                            <div className="w-full aspect-[21/9] bg-stone-200 rounded-lg mb-3 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                                <div className="absolute inset-0 flex items-center justify-center text-stone-400 font-medium text-xs">
+                                    [Students]
+                                </div>
+                            </div>
+                            
+                            <div className="px-1 pb-1">
+                                <h3 className="text-sm md:text-base font-bold text-stone-900 mb-1">Internships</h3>
+                                <p className="text-xs text-stone-500 leading-relaxed">High management oversight, inexperienced execution.</p>
+                            </div>
+                        </div>
+
+                        {/* 4. Freelancers (Low Value, High Flexibility) */}
+                        <div className="group matrix-card rounded-xl bg-white p-3 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                            {/* Placeholder Image */}
+                            <div className="w-full aspect-[21/9] bg-stone-200 rounded-lg mb-3 relative overflow-hidden group-hover:scale-[1.02] transition-transform duration-500">
+                                <div className="absolute inset-0 flex items-center justify-center text-stone-400 font-medium text-xs">
+                                    [Freelancer]
+                                </div>
+                            </div>
+
+                            <div className="px-1 pb-1">
+                                <h3 className="text-sm md:text-base font-bold text-stone-900 mb-1">Freelancers</h3>
+                                <p className="text-xs text-stone-500 leading-relaxed">Inconsistent quality, unreliable availability.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
     );
+                
 }
