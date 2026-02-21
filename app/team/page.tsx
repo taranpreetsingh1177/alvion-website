@@ -78,6 +78,141 @@ const teamMembers = [
     }
 ];
 
+const mentors = [
+    {
+        name: "Shekhar Gera",
+        role: "General Manager - PSM & Consumer Strategy",
+        institution: "Masters' Union",
+        desc: "Consumer Strategy and Market Research Specialist with a focus on segmenting audiences, building insights-driven positioning, and driving targeted marketing approaches.",
+        image: "/Photos/mentors/shekhar gera.png",
+        experience: ["General Manager - PSM & Consumer Strategy, Masters' Union", "Senior Manager - CSM, NielsenIQ", "Senior Data Analyst, BCG"],
+        education: "Master's degree, Statistics, Delhi University",
+        linkedin: "https://www.linkedin.com/in/shekhar-gera-60a5a359/",
+        achievements: "Spearheaded Psychology & Marketing Programme at Masters' Union"
+    },
+    {
+        name: "Shubham Verma",
+        role: "Director - Product & Growth",
+        institution: "upGrad",
+        desc: "Leading partnerships, alternate marketing channels, and industry-led programs at upGrad. Started career in Finmechanics and served as Chief of Staff at the MD's office.",
+        image: "/Photos/mentors/shubham verma.png",
+        experience: ["Director - Product & Growth, upGrad", "Chief Of Staff - MD's office, upGrad", "Consultant, FINMECHANICS"],
+        education: "B.Tech in Production and Industrial Engineering, IIT Delhi",
+        linkedin: "https://www.linkedin.com/in/shubham-verma1/",
+        achievements: "Leading Industry-led programs with more than 1.5L paid enrollments"
+    },
+    {
+        name: "Utsav Bansal",
+        role: "Management Consultant",
+        institution: "Accenture Strategy",
+        desc: "Management Consultant at Accenture Strategy with close to 7 years of experience. Top Mentor on Unstop, helping students and young professionals achieve clarity in their careers.",
+        image: "/Photos/mentors/utsav bansal.png",
+        experience: ["Management Consultant, Accenture", "Associate, PwC India", "System Engineer, Infosys"],
+        education: "PGDIM, Indian Institute of Management Mumbai",
+        linkedin: "https://www.linkedin.com/in/utsav-bansal-ub24/",
+        achievements: "Top Mentor at Unstop, Mentored 100+ students on careers & interviews"
+    },
+    {
+        name: "Reetik Agarwal",
+        role: "Investment & Portfolio Head",
+        institution: "Antler",
+        desc: "Passionate about creating an impact, leading investments and portfolio in Fintech, Mobility/EV, Logistics and B2B Commerce companies.",
+        image: "/Photos/mentors/reetik.png",
+        experience: ["Fintech, Mobility and B2B Commerce Investment & Portfolio Head, Antler", "Senior Analyst - TMT, Bain & Company", "Transaction Banking Intern, Standard Chartered Bank"],
+        education: "BA Honors Economics, Shri Ram College of Commerce",
+        linkedin: "https://www.linkedin.com/in/reetik-agarwal-26b7b7146/",
+        achievements: "Invested in ~40 startups from an evaluated pool of 50,000 founders"
+    },
+    {
+        name: "Ankush Gupta",
+        role: "Vice President - Human Resources",
+        institution: "EY",
+        desc: "Experienced HR leader currently working at EY and previously serving at Infosys and KPMG.",
+        image: "/Photos/mentors/ankush gupta.png",
+        experience: ["EY", "Infosys", "KPMG"],
+        education: "NIT WARANGAL",
+        linkedin: "https://www.linkedin.com/in/ankush-gupta-bb240543/",
+        achievements: "Tech Recruitment Certified Professional"
+    },
+    {
+        name: "Shatam",
+        role: "Principal Consultant",
+        institution: "Infosys Consulting",
+        desc: "Seasoned business consultant with 13+ years of experience in process transformation by leveraging AI across multiple industries.",
+        image: "/Photos/mentors/shatam.png",
+        experience: ["Principal Consultant, Infosys Consulting", "Technology Consultant, HomeOne Technologies", "Senior Engineering Project Manager, Tata Steel"],
+        education: "MBA, Indian Institute of Management Bangalore",
+        linkedin: "https://www.linkedin.com/in/shataminfiiimbtsl/",
+        achievements: "Managed AIXCelerate program with UK Government"
+    },
+    {
+        name: "Sandeep Agarwal",
+        role: "Program Manager",
+        institution: "Capgemini",
+        desc: "A highly committed professional with over 12 years of experience in the Full Life Cycle of ERP projects, specializing in Microsoft Dynamics 365.",
+        image: "/Photos/mentors/sandeep kumar.png",
+        experience: ["Program Manager, Capgemini", "Senior Architect, Hexaware Technologies", "Principal Consultant, Birlasoft"],
+        education: "Senior Management Programme, Indian Institute of Management, Calcutta",
+        linkedin: "https://www.linkedin.com/in/sandeepagarwal1981/",
+        achievements: "Microsoft Certified: Dynamics 365 Finance Functional Consultant Associate"
+    },
+    {
+        name: "Mahavir Kumar",
+        role: "Founder",
+        institution: "Beyond Career",
+        desc: "Dynamic professional with a passion for strategy, innovation, and entrepreneurship. Driven to create solutions and impactful networks.",
+        image: "/Photos/mentors/mahavir kumar.png",
+        experience: ["Founder, Beyond Career", "Student Mentor, Unstop", "Founder's Office, Growth Grid Global", "Strategy Intern, Bureau of Indian Standards"],
+        education: "B.Tech + M.Tech, IIT Kharagpur",
+        linkedin: "https://www.linkedin.com/in/mahavir-kumar-beyond-career/",
+        achievements: "Founded Beyond Career to democratize access to internships and placements"
+    },
+    {
+        name: "Anil Das",
+        role: "Founder & Managing Director",
+        institution: "HR India Solutions",
+        desc: "First-generation entrepreneur with a background in Human Resources, skilled in talent management, HR consulting, payroll, executive search, and employee engagement.",
+        image: "/Photos/mentors/anil das.png",
+        experience: ["Country Head - HR, RPG Cellucom", "Chief Manager - HR, DLF Limited", "Dy. General Manager - HR, Pizza Hut"],
+        education: "Xavier Institute of Social Service (XISS), Ranchi",
+        linkedin: "https://www.linkedin.com/in/anilkdas/",
+        achievements: "Founded HR India Solutions in 2009"
+    },
+    {
+        name: "Sanskriti Pandey",
+        role: "Vice President - Business & Partnerships",
+        institution: "26MilesCapital",
+        desc: "Chartered Accountant and SRCC gold medalist, acting as a strategic partner to leadership. Official LinkedIn Creator focusing on prudence and professional skills.",
+        image: "/Photos/mentors/sanskriti.png",
+        experience: ["Vice President- Business & Partnerships, 26MilesCapital", "Team Lead, CLOUDIT", "Private Equity Investment Associate, Terra-Invest"],
+        education: "B.Com (Hons.), Shri Ram College of Commerce",
+        linkedin: "https://www.linkedin.com/in/sanskriti~pandey/",
+        achievements: "SRCC '20 Gold Medalist and Top 100 Women Creators of India"
+    },
+    {
+        name: "Tarini Nema",
+        role: "Policy Research Associate",
+        institution: "Office of Member of Parliament, Rajya Sabha",
+        desc: "Specializes in parliamentary and legislative research, focusing on technology policy, digital inclusion, innovation, and emerging technologies.",
+        image: "/Photos/mentors/tarini.png",
+        experience: ["Research Associate & Consultant, Office of Member of Parliament, Rajya Sabha", "Policy Research Intern - International Relations", "Research Associate, Office of Member of Parliament, Lok Sabha"],
+        education: "MA, Political Science, Indira Gandhi National Open University",
+        linkedin: "https://www.linkedin.com/in/tarini-nema/",
+        achievements: "Qualified NTA UGC NET (Political Science) for Asstt Professor and PhD"
+    },
+    {
+        name: "Chandra Kumar",
+        role: "Founder",
+        institution: "HomeONE & Unfiltered Lessons",
+        desc: "24-year journey across Management, Business Development, Sales, Training & Development, and HR. Catalyst for transformation and mentor empowers individuals and businesses.",
+        image: "/Photos/mentors/chandra kumar.png",
+        experience: ["Founder, HomeONE", "Founder, Unfiltered Lessons", "Head of Corporate Finance, GRAVITY LONDON", "Head Of Human Resources, GRAVITY LONDON"],
+        education: "Diploma in Business Management, NMIMS",
+        linkedin: "https://www.linkedin.com/in/thechandrakumar/",
+        achievements: "Built HomeONE into a fast-emerging Real Estate Advisory firm in 2 years"
+    }
+];
+
 export default function TeamPage() {
     return (
         <div className="bg-slate-50 min-h-screen flex flex-col">
@@ -108,10 +243,20 @@ export default function TeamPage() {
                     </div>
 
                     {/* Extended Team Section */}
-                    <div>
+                    <div className="mb-24">
                         <h2 className="text-2xl font-bold text-[#0a1b2b] mb-12 border-l-4 border-[#FFD700] pl-4">Directors</h2>
                         <div className="grid md:grid-cols-4 gap-6">
                             {teamMembers.map((member, index) => (
+                                <TeamMemberCard key={index} member={member} isFounder={false} />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Mentors Section */}
+                    <div>
+                        <h2 className="text-2xl font-bold text-[#0a1b2b] mb-12 border-l-4 border-[#FFD700] pl-4">Our Mentors</h2>
+                        <div className="grid md:grid-cols-4 gap-6">
+                            {mentors.map((member, index) => (
                                 <TeamMemberCard key={index} member={member} isFounder={false} />
                             ))}
                         </div>
@@ -147,7 +292,7 @@ function TeamMemberCard({ member, isFounder }: { member: any, isFounder: boolean
                 </div>
 
                 {/* Back Side */}
-                <div className="flip-card-back rounded-2xl border-2 border-[#FFD700] p-5 flex flex-col shadow-xl bg-[#0a1b2b] relative">
+                <div className="flip-card-back rounded-2xl border-2 border-[#FFD700] p-5 flex flex-col shadow-xl bg-white relative">
                     {/* LinkedIn Icon - Top Right */}
                     {member.linkedin && member.linkedin !== "#" && (
                         <a
@@ -163,49 +308,49 @@ function TeamMemberCard({ member, isFounder }: { member: any, isFounder: boolean
                     )}
 
                     {/* Scrollable Content */}
-                    <div className="overflow-y-auto flex-1 pr-1 scrollbar-thin">
+                    <div className="overflow-y-auto flex-1 pr-1 scrollbar-thin-dark">
                         {/* Header */}
                         <div className="flex items-center gap-3 mb-3">
-                            <div className="w-10 h-10 rounded-full bg-white/10 border border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] font-bold text-base flex-shrink-0">
+                            <div className="w-10 h-10 rounded-full bg-[#0a1b2b] border border-[#FFD700]/30 flex items-center justify-center text-[#FFD700] font-bold text-base flex-shrink-0">
                                 {member.name.charAt(0)}
                             </div>
                             <div>
-                                <h4 className="font-bold text-white text-base">{member.name}</h4>
-                                <p className="text-xs text-white/50">{member.role}</p>
+                                <h4 className="font-bold text-[#0a1b2b] text-base">{member.name}</h4>
+                                <p className="text-xs text-slate-500">{member.role}</p>
                             </div>
                         </div>
 
                         {/* Description */}
-                        <p className="text-xs text-white/80 mb-3 leading-relaxed italic border-l-2 border-[#FFD700] pl-3">
+                        <p className="text-xs text-slate-600 mb-3 leading-relaxed italic border-l-2 border-[#FFD700] pl-3">
                             {member.description || member.desc}
                         </p>
 
                         {/* Education */}
                         {member.education && (
                             <div className="mb-2">
-                                <div className="flex items-center gap-2 text-xs font-bold text-[#FFD700] uppercase tracking-wider mb-1">
-                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="flex items-center gap-2 text-xs font-bold text-[#0a1b2b] uppercase tracking-wider mb-1">
+                                    <svg className="w-3.5 h-3.5 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5z" />
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                                     </svg>
                                     Education
                                 </div>
-                                <p className="text-xs text-white/80">{member.education}</p>
+                                <p className="text-xs text-slate-600">{member.education}</p>
                             </div>
                         )}
 
                         {/* Experience */}
                         {member.experience && (
                             <div className="mb-2">
-                                <div className="flex items-center gap-2 text-xs font-bold text-[#FFD700] uppercase tracking-wider mb-1">
-                                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <div className="flex items-center gap-2 text-xs font-bold text-[#0a1b2b] uppercase tracking-wider mb-1">
+                                    <svg className="w-3.5 h-3.5 text-[#FFD700]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                     </svg>
                                     Expertise
                                 </div>
                                 <ul className="space-y-0.5">
                                     {member.experience.map((exp: string, i: number) => (
-                                        <li key={i} className="text-xs text-white/80 flex items-start gap-2">
+                                        <li key={i} className="text-xs text-slate-600 flex items-start gap-2">
                                             <span className="w-1 h-1 rounded-full bg-[#FFD700] mt-1.5 flex-shrink-0" />
                                             {exp}
                                         </li>
@@ -216,8 +361,8 @@ function TeamMemberCard({ member, isFounder }: { member: any, isFounder: boolean
 
                         {/* Achievement */}
                         {member.achievements && (
-                            <div className="p-2 bg-white/10 rounded-lg">
-                                <p className="text-xs text-white font-medium">
+                            <div className="p-2 bg-[#0a1b2b]/5 rounded-lg">
+                                <p className="text-xs text-[#0a1b2b] font-medium">
                                     🏆 {member.achievements}
                                 </p>
                             </div>

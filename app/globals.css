@@ -76,7 +76,7 @@ html {
 
 .flip-card-back {
     transform: rotateY(180deg);
-    background: #0a1b2b;
+    background: white;
     border-radius: 24px !important;
     border: 2px solid #FFD700;
 }
@@ -98,4 +98,23 @@ html {
 
 .scrollbar-thin::-webkit-scrollbar-thumb:hover {
     background: #e6c200;
+}
+
+/* Dark Scrollbar for light backgrounds */
+.scrollbar-thin-dark::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scrollbar-thin-dark::-webkit-scrollbar-track {
+    background: rgba(10, 27, 43, 0.1);
+    border-radius: 4px;
+}
+
+.scrollbar-thin-dark::-webkit-scrollbar-thumb {
+    background: #0a1b2b;
+    border-radius: 4px;
+}
+
+.scrollbar-thin-dark::-webkit-scrollbar-thumb:hover {
+    background: #1a3a5c;
 }

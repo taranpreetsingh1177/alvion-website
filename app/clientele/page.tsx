@@ -128,6 +128,13 @@ const companies = [
             "GTM and partnership strategy deck"
         ]
     },
+    {
+        name: "LS Digital",
+        logo: "/logos/ls-digital.png",
+        pointers: [
+            "8+ E-commerce report provided"
+        ]
+    },
 ];
 
 export default function ClientelePage() {
