@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import Image from "next/image";
 
-// Reusing data from MentorBoard
+// Reusing data from MentorBoard component
 const founders = [
     {
         name: "Krish Mittal",
