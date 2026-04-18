@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Noto_Serif } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const notoSerif = Noto_Serif({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
-  title: "Alvion | Strategic Consulting",
-  description: "Premium strategic consulting for enterprise growth",
+  title: "Alvion",
+  description: "Alvion",
 };
 
 export default function RootLayout({
@@ -18,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} antialiased bg-[#F3F2ED] text-black`}
-      >
+      <body className={`${inter.variable} ${notoSerif.variable} ${inter.className} antialiased`}>
         {children}
       </body>
     </html>
