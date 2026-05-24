@@ -20,7 +20,7 @@ const companies = [
     { name: "Unstop", logo: "/logos/unstop.svg" },
     { name: "Masters Union", logo: "/logos/masters union.png" },
     { name: "Manipal Cigna", logo: "/logos/manipalCigna.png" },
-    { name: "Ship Turtle", logo: "/logos/ship-turtle.svg" },
+    { name: "Ship Turtle", logo: "/logos/ship-turtle.png" },
     { name: "Sunfuel Electric", logo: "/logos/sunfuel-electric.svg" },
 ];
 
