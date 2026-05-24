@@ -2,9 +2,17 @@
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import Image from "next/image";
 
 const companies = [
+    {
+        name: "CashKaro",
+        logo: "/logos/cashkaro.png",
+        pointers: [
+            "Corporate shopping habits & adoption analysis",
+            "B2B2C financial wellness acquisition funnel",
+            "HRMS integration & activation roadmap"
+        ]
+    },
     {
         name: "Infosys",
         logo: "/logos/infosys.svg",

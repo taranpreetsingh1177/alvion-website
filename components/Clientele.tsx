@@ -5,8 +5,9 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const companies = [
+    { name: "CashKaro", logo: "/logos/cashkaro.png" },
     // Clients before center
-    { name: "ANI", logo: "/logos/ANI.png" },
+    { name: "Indian Angel Network (IAN)", logo: "/logos/IAN.png" },
     { name: "Alpha Grep", logo: "/logos/alpha-grep.png" },
     { name: "Cool The Globe", logo: "/logos/cool-the-globe.svg" },
     { name: "DU Buddy", logo: "/logos/du-buddy.png" },
